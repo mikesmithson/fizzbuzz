@@ -5,7 +5,7 @@ import static java.lang.String.valueOf;
 /**
  * Created by MikeSmithson on 7/16/2016.
  */
-public class RegularNumberAndSpec implements FizzBuzzSpecs {
+public class RegularNumberAndSpec implements FizzBuzzSpec {
     private NotSpec notDivisibleByThree = new NotSpec(new FizzSpec());
     private NotSpec notDivisibleByFive = new NotSpec(new BuzzSpec());
 

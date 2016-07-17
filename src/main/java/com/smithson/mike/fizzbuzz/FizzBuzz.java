@@ -1,6 +1,6 @@
 package com.smithson.mike.fizzbuzz;
 
-import com.smithson.mike.fizzbuzz.spec.FizzBuzzSpecs;
+import com.smithson.mike.fizzbuzz.spec.FizzBuzzSpec;
 
 import java.util.List;
 
@@ -9,16 +9,16 @@ import java.util.List;
  */
 public class FizzBuzz {
 
-    private final List<FizzBuzzSpecs> fizzBuzzSpecsList;
+    private final List<FizzBuzzSpec> fizzBuzzSpecList;
 
-    public FizzBuzz(List<FizzBuzzSpecs> fizzBuzzSpecsList) {
-        this.fizzBuzzSpecsList = fizzBuzzSpecsList;
+    public FizzBuzz(List<FizzBuzzSpec> fizzBuzzSpecList) {
+        this.fizzBuzzSpecList = fizzBuzzSpecList;
     }
 
     public String calculate(int number) {
         StringBuilder result = new StringBuilder();
 
-       for (FizzBuzzSpecs spec: fizzBuzzSpecsList) {
+       for (FizzBuzzSpec spec: fizzBuzzSpecList) {
            if (spec.isSatisfiedBy(number)) {
                result.append(spec.responseFor(number));
            }

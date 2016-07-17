@@ -5,9 +5,9 @@ package com.smithson.mike.fizzbuzz.spec;
  */
 public class NotSpec {
 
-    private final FizzBuzzSpecs fizzBuzzSpec;
+    private final FizzBuzzSpec fizzBuzzSpec;
 
-    public NotSpec(FizzBuzzSpecs fizzBuzzSpec) {
+    public NotSpec(FizzBuzzSpec fizzBuzzSpec) {
             this.fizzBuzzSpec = fizzBuzzSpec;
     }
 

@@ -1,7 +1,7 @@
 package com.smithson.mike.fizzbuzz;
 
 import com.smithson.mike.fizzbuzz.spec.BuzzSpec;
-import com.smithson.mike.fizzbuzz.spec.FizzBuzzSpecs;
+import com.smithson.mike.fizzbuzz.spec.FizzBuzzSpec;
 import com.smithson.mike.fizzbuzz.spec.FizzSpec;
 import com.smithson.mike.fizzbuzz.spec.RegularNumberAndSpec;
 import org.junit.Before;
@@ -21,13 +21,13 @@ public class FizzBuzzTest {
 
     @Before
     public void setUp() {
-        List<FizzBuzzSpecs> fizzBuzzSpecsList = new ArrayList<>();
-        fizzBuzzSpecsList.add(new FizzSpec());
-        fizzBuzzSpecsList.add(new BuzzSpec());
-        fizzBuzzSpecsList.add(new RegularNumberAndSpec());
+        List<FizzBuzzSpec> fizzBuzzSpecList = new ArrayList<>();
+        fizzBuzzSpecList.add(new FizzSpec());
+        fizzBuzzSpecList.add(new BuzzSpec());
+        fizzBuzzSpecList.add(new RegularNumberAndSpec());
 
 
-        fizzbuzz = new FizzBuzz(fizzBuzzSpecsList);
+        fizzbuzz = new FizzBuzz(fizzBuzzSpecList);
     }
 
     @Test
